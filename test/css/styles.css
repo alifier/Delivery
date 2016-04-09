@@ -13,31 +13,8 @@ body {
 	/*height: 200px;*/
 }
 
-/*#logo-img {
-	background: url('../images/chow_fleet-1.jpg') no-repeat;
-	width: 576px;
-	height: 150px;
-	margin: 10px 15px 10px 0;
-}*/
-
 #divnav {
 	border: 1px solid black;
-}
-
-
-.navbar-brand h1 {
-	color: blue;
-	font-size: 1.5em;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-shadow: 1px 1px 1px #222;
-	margin-top: 0;
-	margin-bottom: 0;
-	line-height: 0.75;
-}
-
-.navbar-brand a:hover, .navbar-brand a:focus {
-	text-decoration: none;
 }
 
 /*Navbar end*/
@@ -77,3 +54,56 @@ body {
 	color: #fff;
 	opacity: 0.8;
 }
+
+/*End of Home Page*/
+
+
+/* Menu Categories Page*/
+#menu-categories-title {
+	margin-bottom: 50px;
+
+}
+
+.category-tile {
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+	margin: 0 auto 15px;
+	background-color: white;
+	color: grey;
+}
+
+.category-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+	text-decoration: none;
+
+}
+
+
+nav ul li {
+	list-style: none;
+	color: white;
+}
+
+nav ul li a {
+	color: white;
+	font-size: 20px;
+}
+
+nav ul li a:focus, nav ul li a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+a .category-tile: hover, a .category-tile: focus {
+	text-decoration: none;
+	color: black;
+}
+
+div a div h3: hover, div a div h3: focus {
+	text-decoration: none;
+}
+
+/* End of Menu Categories Page*/
+
+
