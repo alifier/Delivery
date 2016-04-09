@@ -95,14 +95,9 @@ nav ul li a:focus, nav ul li a:hover {
 	text-decoration: none;
 }
 
-a .category-tile: hover, a .category-tile: focus {
-	text-decoration: none;
-	color: black;
-}
-
 div a div h3: hover, div a div h3: focus {
 	text-decoration: none;
-}
+} /*It's not really working, fix this*/
 
 /* End of Menu Categories Page*/
 
