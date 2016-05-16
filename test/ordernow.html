@@ -27,7 +27,7 @@
               <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3"></div>
               <div class="col-xs-8 col-sm-6 col-md-6 col-lg-6">
                   <a href="index.html">
-                    <img id="logo-img" class="img-responsive center-block" alt="Chow_Fleet_logo" src="images/chow_fleet-1.jpg">
+                    <img id="logo-img" class="img-responsive center-block" alt="Chow_Fleet_logo" src="images/chow_fleet.png">
                   </a>
               </div>
               <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3"></div>
@@ -37,18 +37,18 @@
         </nav>
       </header>
 
-    <div class="container">
+    <div class="container-fluid">
       <h2 id="menu-categories-title" class="text-center">Tortuga's Mexican Village Menu</h2>
       <section class="row">
 
-        <div class="col-md-3">
-          <nav class="hidden-print hidden-xs hidden-sm">
-            <ul>
+        <div class="col-md-3 col-sm-3">
+          <nav class="hidden-print hidden-xs navbar-fixed menu-category-navbar" role="navigation">
+            <ul class = "nav nav-pills nav-stacked">
               <li>
                 <a href="#Entremesas">Entremesas</a>
               </li>
               <li>
-                <a href="#Especialidades_de_Casa">Especialidades de Casa</a>           
+                <a href="#Especialidades_de_Casa">Especialidades de Casa</a>      
               </li>
               <li>
                 <a href="#Pollo_&_Carne">Pollo &amp Carne</a>
@@ -59,129 +59,212 @@
         </div>
 
 
-        <div class="col-md-9">
+        <div class="col-md-9 col-sm-9">
           <div class="row">
             <h3 id="Entremesas" class="text-center">Entremesas</h3>
-            <div class="col-md-3">
-              <a href="single-category.html">
-                <div class="category-tile">
-                  <h3 class="text-center">Nachos</h3>
-                </div>
-              </a>
-            </div>
+            <div class="col-md-4">
 
-            <div class="col-md-3">
-              <a href="single-category.html">
+              <a data-toggle="modal" href="#myModal">
                 <div class="category-tile">
-                  <h3 class="text-center">Guacamole Nachos</h3>
+                  <p class="text-left category-tile-title">Nachos</p>
+                  <p class="text-right category-tile-price">$12</p>
+                  <p class="text-left category-tile-descr">Refried beans and melted cheese</p>
+
                 </div>
               </a>
+              <!-- modal -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title">Nachos</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form class="form-horizontal" role="form">
+                        <div class="form-group radio">
+                          <label class="control-label" for="Beansoptions">Beans</label>
+                          
+                          <input type="radio" class="form-control" name="Beansoptions" id="Beansoptions1" value="option1" checked>
+                          Black Beans
+                          
+                        </div>
+                      </form>
+                      <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Add to Order</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+
             </div>
-            <div class="col-md-3">
-              <a href="single-category.html">
+            <div class="col-md-4">
+              <a data-toggle="modal" href="#myModal2">
                 <div class="category-tile">
-                  <h3 class="text-center">Nachos Rayo</h3>
+                  <p class="text-left category-tile-title">Guacamole Nachos</p>
+                  <p class="text-right category-tile-price">$15</p>
+                  <p class="text-left category-tile-descr">Guacamole and melted cheese</p>
                 </div>
               </a>
+              <!-- modal -->
+              <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title">Guacamole Nachos</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form class="form-horizontal" role="form">
+                        <h4>Beans</h4>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            Black Beans
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Pinto Beans
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Add to Order</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
               <a href="single-category.html">
                 <div class="category-tile">
-                  <h3 class="text-center">Nachos Supreme</h3>
+                  <p class="text-left category-tile-title">Nachos Rayo</p>
+                  <p class="text-right category-tile-price">$14</p>
+                  <p class="text-left category-tile-descr">Half guacamole and half refried beans</p>
                 </div>
               </a>
             </div>
             <div class="clearfix visible-md-block visible-lg-block"></div>
-            <div class="col-md-3">
+            <div class="col-md-4">
               <a href="single-category.html">
                 <div class="category-tile">
-                  <h3 class="text-center">Nachos DeMar</h3>
+                  <p class="text-left category-tile-title">Nachos Supreme</p>
+                  <p class="text-right category-tile-price">$15</p>
+                  <p class="text-left category-tile-descr">Refried beans, ground beef, tons of melted cheese topped with jalapenos and sour cream</p>
                 </div>
               </a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
               <a href="single-category.html">
                 <div class="category-tile">
-                  <h3 class="text-center">Calamares</h3>
+                  <p class="text-left category-tile-title">Nachos DeMar</p>
+                  <p class="text-right category-tile-price">$13</p>
+                  <p class="text-left category-tile-descr">Seafood nachos</p>
                 </div>
               </a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
               <a href="single-category.html">
                 <div class="category-tile">
-                  <h3 class="text-center">Chili Cup</h3>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a href="single-category.html">
-                <div class="category-tile">
-                  <h3 class="text-center">Tortuga's Wings</h3>
+                  <p class="text-left category-tile-title">Calamares</p>
+                  <p class="text-right category-tile-price">$7</p>
+                  <p class="text-left category-tile-descr">Sautéed squid in a spicy ink sauce</p>
                 </div>
               </a>
             </div>
             <div class="clearfix visible-md-block visible-lg-block"></div>
-            <div class="col-md-3">
+            <div class="col-md-4">
               <a href="single-category.html">
                 <div class="category-tile">
-                  <h3 class="text-center">Poppers</h3>
+                  <p class="text-left category-tile-title">Chili Cup</p>
+                  <p class="text-right category-tile-price">$7</p>
+                  <p class="text-left category-tile-descr">Refried beans, ground beef, topped with lettuce and red sauce</p>
                 </div>
               </a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
               <a href="single-category.html">
                 <div class="category-tile">
-                  <h3 class="text-center">Guacamole Dip</h3>
+                  <p class="text-left category-tile-title">Tortuga's Wings</p>
+                  <p class="text-right category-tile-price">$12</p>
+                  <p class="text-left category-tile-descr">Super spicy chicken wings served with sour cream and guacamole</p>
                 </div>
               </a>
             </div>
-
+            <div class="col-md-4">
+              <a href="single-category.html">
+                <div class="category-tile">
+                  <p class="text-left category-tile-title">Poppers</p>
+                  <p class="text-right category-tile-price">$9</p>
+                  <p class="text-left category-tile-descr">Red jalapenos stuffed with cream cheese</p>
+                </div>
+              </a>
+            </div>
+            <div class="clearfix visible-md-block visible-lg-block"></div>
+            <div class="col-md-4">
+              <a href="single-category.html">
+                <div class="category-tile">
+                  <p class="text-left category-tile-title">Guacamole Dip</p>
+                  <p class="text-right category-tile-price">$13</p>
+                  <p class="text-left category-tile-descr">The best guacamole north of the border</p>
+                </div>
+              </a>
+            </div>
             <div class="clearfix visible-md-block visible-lg-block"></div>
             <h3 id="Especialidades_de_Casa" class="text-center">Especialidades de Casa</h3>
-            <div class="col-md-3">
+            <div class="col-md-4">
               <a href="single-category.html">
                 <div class="category-tile">
                   <h3 class="text-center">Chipotle Shrimp</h3>
                 </div>
               </a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
               <a href="single-category.html">
                 <div class="category-tile">
                   <h3 class="text-center">Enchiladas Oaxaca</h3>
                 </div>
               </a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
               <a href="single-category.html">
                 <div class="category-tile">
                   <h3 class="text-center">Chiles Rellenos Poblanos</h3>
                 </div>
               </a>
             </div>
-            <div class="col-md-3">
+            <div class="clearfix visible-md-block visible-lg-block"></div>
+            <div class="col-md-4">
               <a href="single-category.html">
                 <div class="category-tile">
                   <h3 class="text-center">Enchiladas De Mar</h3>
                 </div>
               </a>
             </div>
-            <div class="clearfix visible-md-block visible-lg-block"></div>
-            <div class="col-md-3">
+            <div class="col-md-4">
               <a href="single-category.html">
                 <div class="category-tile">
                   <h3 class="text-center">Pollo Mole</h3>
                 </div>
               </a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
               <a href="single-category.html">
                 <div class="category-tile">
                   <h3 class="text-center">Pescado Acapulco</h3>
                 </div>
               </a>
             </div>
-            <div class="col-md-3">
+            <div class="clearfix visible-md-block visible-lg-block"></div>
+            <div class="col-md-4">
               <a href="single-category.html">
                 <div class="category-tile">
                   <h3 class="text-center">Creamy Chipotle Pollo</h3>

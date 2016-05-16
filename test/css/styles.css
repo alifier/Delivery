@@ -1,7 +1,9 @@
 body {
 	font-size: 16px;
-	color: #fff;
-	background-color: #61122f;
+	color: black;
+	/*color: #fff;*/
+	background-color: #FFBC6C;
+	/*background-color: #61122f;*/
 	font-family: 'Oxygen', sans-serif;
 }
 
@@ -10,7 +12,7 @@ body {
 #header-nav {
 	border-radius: 0;
 	border: 0;
-	/*height: 200px;*/
+	background-color: white;
 }
 
 #divnav {
@@ -19,6 +21,9 @@ body {
 
 /*Navbar end*/
 
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
 
 /*Home Page*/
 .container .jumbotron {
@@ -61,43 +66,70 @@ body {
 /* Menu Categories Page*/
 #menu-categories-title {
 	margin-bottom: 50px;
+	/*text-shadow: 2px 2px white;*/
 
 }
 
 .category-tile {
 	position: relative;
-	border: 2px solid #3F0C1F;
+	/*border: 2px solid #3F0C1F;*/
 	overflow: hidden;
 	margin: 0 auto 15px;
 	background-color: white;
+	height: 100px;
+	padding: 5px;
+}
+
+.category-tile-title {
+	font-size: 18px;
+	color: black;
+	float: left;
+}
+
+.category-tile-price {
+	font-size: 18px;
+	color: red;
+	float: right;
+}
+
+.category-tile-descr {
+	font-size: 14px;
 	color: grey;
+	clear: both;
 }
 
 .category-tile:hover {
 	box-shadow: 0 1px 5px 1px #cccccc;
-	text-decoration: none;
-
 }
 
-
+/* Menu Category navbar */
 nav ul li {
 	list-style: none;
-	color: white;
+	color: black;
 }
 
 nav ul li a {
-	color: white;
+	color: black;
 	font-size: 20px;
 }
 
 nav ul li a:focus, nav ul li a:hover {
-	color: white;
-	text-decoration: none;
+	color: black;
 }
 
-div a div h3: hover, div a div h3: focus {
-	text-decoration: none;
-} /*It's not really working, fix this*/
+.navbar-fixed {
+	position: fixed;
+	/*overflow: hidden;*/
+	width: 22%;
+}
+
+.menu-category-navbar {
+	font-size: 18px;
+	color: black;
+	background-color: white;
+	border: 1px solid grey;
+	border-radius: 6px;
+}
 
 /* End of Menu Categories Page*/
 
